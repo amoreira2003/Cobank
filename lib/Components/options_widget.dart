@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 class OptionsWidget extends StatelessWidget {
@@ -5,22 +7,65 @@ class OptionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 14.0),
-      child: Scrollbar(
-        child: Row(
-          children: [
-            CircleAvatar(
-              radius: 30,
-              backgroundColor: Colors.grey,
-              child: Icon(
-                Icons.add,
-                color: Colors.white,
-              ),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(children: [
+        Container(
+          margin: EdgeInsets.all(12),
+          child: CircleAvatar(
+            radius: 35,
+            backgroundColor: Colors.grey,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
             ),
-          ],
+          ),
         ),
-      ),
+        Container(
+          margin: EdgeInsets.all(12),
+          child: CircleAvatar(
+            radius: 35,
+            backgroundColor: Colors.grey,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.all(12),
+          child: CircleAvatar(
+            radius: 35,
+            backgroundColor: Colors.grey,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.all(12),
+          child: CircleAvatar(
+            radius: 35,
+            backgroundColor: Colors.grey,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.all(8),
+          child: CircleAvatar(
+            radius: 35,
+            backgroundColor: Colors.grey,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ]),
     );
   }
 }

@@ -1,6 +1,9 @@
+import 'package:cobank/Components/card_button_widget.dart';
+import 'package:cobank/Components/card_info.dart';
 import 'package:cobank/Components/header_widget.dart';
 import 'package:cobank/Components/info_widget.dart';
 import 'package:cobank/Components/options_widget.dart';
+import 'package:cobank/Components/recommendations_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -33,7 +36,19 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        body:
-            Column(children: [HeaderWidget(), InfoWidget(), OptionsWidget()]));
+        body: Column(children: [
+          const HeaderWidget(),
+          const InfoWidget(),
+          const OptionsWidget(),
+          const CardButtonWidget(),
+          const RecommendationsWidget(),
+          const Divider(
+            color: Colors.grey,
+          ),
+          const CardInfoWidget(),
+          const Divider(
+            color: Colors.grey,
+          ),
+        ]));
   }
 }
