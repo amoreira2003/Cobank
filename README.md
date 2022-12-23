@@ -1,6 +1,5 @@
 <div align="center">
 <img src="./cookiebanner.png" width="500" height="187.5">
-<br>
 
 
 <div align="start">
@@ -13,8 +12,9 @@ Esse repositório contem um **UI/UX** Clone do Aplicativo Mobile do **Nubank** c
 
 ## ⚔️ Sobre o Projeto
 
-Esse projeto foi feito em [Flutter](https://flutter.dev). <br> 
+Esse projeto foi feito em <a href="https://flutter.dev" target="_blank">Flutter</a>. <br> 
 
-O Cookie Bank é um projeto para meu [portfolio](https://github.com/amoreira2003) de **Front-End**
-<div>
+O Cookie Bank é um projeto para meu <a href="https://github.com/amoreira2003" target="_blank">portfólio</a> de **Front-End**
+
+  <div>
 <div>
