@@ -1,3 +1,4 @@
+import 'package:cobank/assets/design_choices.dart';
 import 'package:flutter/material.dart';
 
 class InfoWidget extends StatelessWidget {
@@ -6,10 +7,10 @@ class InfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return (Padding(
-      padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+      padding: EdgeInsets.only(left: 14, right: 14, top: 16, bottom: 0),
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
-        height: 60,
+        height: 65,
         child: DecoratedBox(
             decoration: const BoxDecoration(
               color: Colors.white,
@@ -17,18 +18,28 @@ class InfoWidget extends StatelessWidget {
             child: Column(children: [
               Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text(style: TextStyle(fontSize: 20), "Conta"),
-                    Icon(Icons.arrow_forward_ios)
+                    Text(
+                        style: TextStyle(
+                            fontSize: DesignChoice.titleFontSize,
+                            fontWeight: DesignChoice.titleFontWeight),
+                        "Conta"),
+                    Icon(Icons.arrow_forward_ios,
+                        color: Color.fromARGB(255, 107, 107, 107),
+                        size: DesignChoice.titleIconSize)
                   ]),
               Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 15.0),
-                      child: Text(style: TextStyle(fontSize: 15), "RS 0,79"),
+                      child: Text(
+                          style: TextStyle(
+                              fontSize: DesignChoice.titleFontSize,
+                              fontWeight: DesignChoice.titleFontWeight),
+                          "RS 0,79"),
                     ),
                   ])
             ])),

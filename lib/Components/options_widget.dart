@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../assets/design_choices.dart';
+
 class OptionsWidget extends StatelessWidget {
   const OptionsWidget({super.key});
 
@@ -9,63 +11,38 @@ class OptionsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: Row(children: [
+      child: Padding(
+        padding: const EdgeInsets.only(top: 8, bottom: 8, left: 14.0),
+        child: Wrap(spacing: 8, children: [
+          for (var i = 0; i < 20; i++) infoElement(),
+        ]),
+      ),
+    );
+  }
+
+  Wrap infoElement() {
+    return Wrap(
+      crossAxisAlignment: WrapCrossAlignment.center,
+      direction: Axis.vertical,
+      children: [
         Container(
-          margin: EdgeInsets.all(12),
+          margin: EdgeInsets.only(bottom: 8),
           child: CircleAvatar(
-            radius: 35,
-            backgroundColor: Colors.grey,
+            radius: 30,
+            backgroundColor: DesignChoice.grayColor,
             child: Icon(
-              Icons.add,
-              color: Colors.white,
+              size: 20,
+              Icons.beach_access_rounded,
+              color: Colors.black,
             ),
           ),
         ),
-        Container(
-          margin: EdgeInsets.all(12),
-          child: CircleAvatar(
-            radius: 35,
-            backgroundColor: Colors.grey,
-            child: Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.all(12),
-          child: CircleAvatar(
-            radius: 35,
-            backgroundColor: Colors.grey,
-            child: Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.all(12),
-          child: CircleAvatar(
-            radius: 35,
-            backgroundColor: Colors.grey,
-            child: Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.all(8),
-          child: CircleAvatar(
-            radius: 35,
-            backgroundColor: Colors.grey,
-            child: Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
-        ),
-      ]),
+        Text(
+          "Área Pix",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontWeight: FontWeight.w500),
+        )
+      ],
     );
   }
 }

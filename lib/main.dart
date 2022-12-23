@@ -1,7 +1,9 @@
 import 'package:cobank/Components/card_button_widget.dart';
 import 'package:cobank/Components/card_info.dart';
+import 'package:cobank/Components/discovery_widget.dart';
 import 'package:cobank/Components/header_widget.dart';
 import 'package:cobank/Components/info_widget.dart';
+import 'package:cobank/Components/news_widget.dart';
 import 'package:cobank/Components/options_widget.dart';
 import 'package:cobank/Components/recommendations_widget.dart';
 import 'package:flutter/material.dart';
@@ -35,20 +37,28 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: PreferredSize(
+          child: Container(color: Colors.brown.shade600),
+          preferredSize: Size.fromHeight(2),
+        ),
         backgroundColor: Colors.white,
-        body: Column(children: [
-          const HeaderWidget(),
-          const InfoWidget(),
-          const OptionsWidget(),
-          const CardButtonWidget(),
-          const RecommendationsWidget(),
-          const Divider(
-            color: Colors.grey,
-          ),
-          const CardInfoWidget(),
-          const Divider(
-            color: Colors.grey,
-          ),
-        ]));
+        body: SingleChildScrollView(
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            const HeaderWidget(),
+            const InfoWidget(),
+            const OptionsWidget(),
+            const CardButtonWidget(),
+            const RecommendationsWidget(),
+            const Divider(
+              color: Colors.grey,
+            ),
+            const CardInfoWidget(),
+            const Divider(
+              color: Colors.grey,
+            ),
+            const NewsWidget(),
+          ]),
+        ));
   }
 }
