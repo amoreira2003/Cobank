@@ -7,9 +7,13 @@ import 'package:cobank/Components/news_widget.dart';
 import 'package:cobank/Components/options_widget.dart';
 import 'package:cobank/Components/recommendations_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then(((value) => runApp(MyApp())));
 }
 
 class MyApp extends StatelessWidget {
