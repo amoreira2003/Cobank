@@ -24,7 +24,7 @@ class CardInfoWidget extends StatelessWidget {
                       style: TextStyle(
                           fontSize: DesignChoice.titleFontSize,
                           fontWeight: DesignChoice.titleFontWeight),
-                      "Cartão de Credito"),
+                      "Cartão de Crédito"),
                   Icon(
                     Icons.arrow_forward_ios,
                     size: DesignChoice.titleIconSize,
