@@ -39,7 +39,7 @@ class InfoWidget extends StatelessWidget {
                           style: TextStyle(
                               fontSize: DesignChoice.titleFontSize,
                               fontWeight: DesignChoice.titleFontWeight),
-                          "RS 0,79"),
+                          "C\$ 0,79"),
                     ),
                   ])
             ])),

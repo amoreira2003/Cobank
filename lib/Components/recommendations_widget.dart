@@ -13,9 +13,16 @@ class RecommendationsWidget extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.only(left: 14, top: 8, bottom: 8),
         child: Wrap(spacing: 8, children: [
-          for (var i = 0; i < 10; i++)
-            recommendationElement("Programa Copo de Leite,",
-                " O Copo no leite e o leite no copo"),
+          recommendationElement("Notícia: ",
+              "Fazendas de biscoitos são suspeitas de empregar força de trabalho idosa não declarada!"),
+          recommendationElement("Notícia: ",
+              "Os teístas do mundo descobrem uma nova religião de biscoitos - Nossa, acho que estávamos errados o tempo todo!"),
+          recommendationElement("Notícia: ",
+              "Biquínis de brócolis para mães, repugnados pelas crianças e pais indiferentes."),
+          recommendationElement("Notícia: ",
+              "Fábricas de biscoitos envolvidas em polêmica sobre clima de chocolate!"),
+          recommendationElement("Notícia: ",
+              "Emoji de biscoito mais popular entre os adolescentes, muito à frente do sinal OK e da homem de bigode, diz estudo."),
         ]),
       ),
     );
@@ -24,7 +31,7 @@ class RecommendationsWidget extends StatelessWidget {
   Container recommendationElement(String brownText, String normalText) {
     return Container(
         width: 200,
-        height: 60,
+        height: 100,
         decoration: BoxDecoration(
             color: DesignChoice.grayColor,
             borderRadius: BorderRadius.all(Radius.circular(8))),

@@ -24,29 +24,38 @@ class NewsWidget extends StatelessWidget {
                     fontSize: DesignChoice.titleFontSize,
                     fontWeight: DesignChoice.titleFontWeight),
               ),
-              Container(
-                width: MediaQuery.of(context).size.width - 14,
-                margin: EdgeInsets.symmetric(vertical: 8),
-                decoration: BoxDecoration(
-                    color: DesignChoice.grayColor,
-                    borderRadius: BorderRadius.all(Radius.circular(12))),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 14.0, vertical: 16),
-                  child: Center(
-                      child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Icon(
-                        Icons.sync_disabled_sharp,
-                        color: Colors.black,
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                child: RawMaterialButton(
+                    enableFeedback: true,
+                    splashColor: Colors.transparent,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(12))),
+                    constraints: BoxConstraints(
+                        minWidth: MediaQuery.of(context).size.width - 14,
+                        maxWidth: MediaQuery.of(context).size.width - 14),
+                    onPressed: () {},
+                    elevation: 0,
+                    highlightElevation: 0,
+                    focusElevation: 0,
+                    fillColor: DesignChoice.grayColor,
+                    padding: EdgeInsets.symmetric(vertical: 18.0),
+                    child: Row(children: [
+                      const Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 14),
+                        child: Icon(
+                          Icons.sync_disabled,
+                          size: 20,
+                          color: Colors.black,
+                        ),
                       ),
                       Text(
-                          style: TextStyle(color: Colors.black, fontSize: 14),
-                          "    Assistente de Pagamentos"),
-                    ],
-                  )),
-                ),
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w500),
+                          "Assistente de Pagamentos"),
+                    ])),
               ),
               Container(
                 width: MediaQuery.of(context).size.width - 14,
@@ -63,7 +72,7 @@ class NewsWidget extends StatelessWidget {
                     children: [
                       Text(
                           style: TextStyle(fontSize: 18, color: Colors.white),
-                          "Antecipe seus sonhos com o empréstimo Nu."),
+                          "Se delicie com os cookies dos outros, pegue cookies emprestado."),
                       Container(
                         width: 120,
                         height: 40,
@@ -76,8 +85,8 @@ class NewsWidget extends StatelessWidget {
                             onPressed: () {},
                             child: Text(
                                 style: TextStyle(
-                                    fontSize: 12, color: Colors.white),
-                                "Simular Agora")),
+                                    fontSize: 11, color: Colors.white),
+                                "Simular Emprestimo")),
                       ),
                     ],
                   )),
