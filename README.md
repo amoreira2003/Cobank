@@ -12,7 +12,7 @@ Esse repositório contem um **UI/UX** Clone do Aplicativo Mobile do **Nubank** c
 
 ## ⚔️ Sobre o Projeto
 
-Esse projeto foi feito em <a href="https://flutter.dev" target="_blank">Flutter</a>. <br> 
+Esse projeto foi feito em <a href="https://flutter.dev" target="_blank">Flutter</a> com foco para Celulares. <br> 
 
 O <a href="https://github.com/amoreira2003/Nubank-FlutterClone" target="_blank">Cookie Bank</a> é um projeto para meu <a href="https://github.com/amoreira2003" target="_blank">portfólio</a> de **Front-End**
 
