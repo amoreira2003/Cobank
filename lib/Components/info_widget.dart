@@ -25,9 +25,16 @@ class InfoWidget extends StatelessWidget {
                             fontSize: DesignChoice.titleFontSize,
                             fontWeight: DesignChoice.titleFontWeight),
                         "Conta"),
-                    Icon(Icons.arrow_forward_ios,
-                        color: Color.fromARGB(255, 107, 107, 107),
-                        size: DesignChoice.titleIconSize)
+                    IconButton(
+                      splashColor: Colors.transparent,
+                      constraints: BoxConstraints(maxWidth: 15, maxHeight: 15),
+                      onPressed: (() {
+                        Scaffold.of(context).openEndDrawer();
+                      }),
+                      icon: Icon(Icons.arrow_forward_ios,
+                          color: Color.fromARGB(255, 107, 107, 107),
+                          size: DesignChoice.titleIconSize),
+                    )
                   ]),
               Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
