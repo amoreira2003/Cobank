@@ -7,7 +7,7 @@
 
 ## 🤗 Introdução
 
-Esse repositório contem um **UI/UX** Clone do Aplicativo Mobile do **Nubank** com o tema do [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/).
+Esse repositório contem um Clone do Aplicativo Mobile (Visual) do **Nubank** com o tema do [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/).
 
 
 ## ⚔️ Sobre o Projeto
