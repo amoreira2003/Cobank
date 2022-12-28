@@ -13,8 +13,8 @@ class Header extends StatelessWidget {
       padding: const EdgeInsets.only(left: 14),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const CircleAvatar(
+        children: const [
+          CircleAvatar(
             backgroundColor: Colors.brown,
             radius: 20,
             child: Icon(
@@ -22,7 +22,7 @@ class Header extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          const HeaderIcons()
+          HeaderIcons()
         ],
       ),
     );

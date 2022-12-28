@@ -1,4 +1,3 @@
-import 'package:cobank/assets/design_choices.dart';
 import 'package:cobank/custom_widgets/custom_buttons/sectionButton.dart';
 import 'package:cobank/custom_widgets/sectionTitle.dart';
 import 'package:flutter/material.dart';
@@ -21,15 +20,15 @@ class NewsWidget extends StatelessWidget {
               color: Colors.white,
             ),
             child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              const SectionTitle(title: "Acompanhe também"),
-              const Padding(
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+              SectionTitle(title: "Acompanhe também"),
+              Padding(
                   padding: EdgeInsets.symmetric(vertical: 8.0),
                   child: SectionButton(
                     buttonTitle: "Assistente de Pagamentos",
                     icon: Icons.sync,
                   )),
-              const BigSectionButton(
+              BigSectionButton(
                 headerText:
                     "Se delicie com os cookies dos outros, pegue cookies emprestados.",
                 buttonText: "Simular Empréstimo",

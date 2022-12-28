@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
@@ -16,7 +15,7 @@ class SectionButton extends StatelessWidget {
     return RawMaterialButton(
       enableFeedback: true,
       splashColor: Colors.transparent,
-      shape: RoundedRectangleBorder(
+      shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(12))),
       constraints: BoxConstraints(
           minWidth: MediaQuery.of(context).size.width - 14,
@@ -25,8 +24,8 @@ class SectionButton extends StatelessWidget {
       elevation: 0,
       highlightElevation: 0,
       focusElevation: 0,
-      fillColor: DesignChoice.grayColor,
-      padding: EdgeInsets.symmetric(vertical: 18.0),
+      fillColor: grayColor,
+      padding: const EdgeInsets.symmetric(vertical: 18.0),
       child: Row(
         children: [
           Padding(
@@ -38,7 +37,7 @@ class SectionButton extends StatelessWidget {
             ),
           ),
           Text(
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.black,
                   fontSize: 12,
                   fontWeight: FontWeight.w500),

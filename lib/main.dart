@@ -65,11 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               NavBarCustomButton(
                 customIcon: Icons.cookie_outlined,
-                customColor: DesignChoice.navBarNotSelectedColor,
+                customColor: navBarNotSelectedColor,
               ),
               NavBarCustomButton(
                 customIcon: Icons.shopping_bag_outlined,
-                customColor: DesignChoice.navBarNotSelectedColor,
+                customColor: navBarNotSelectedColor,
               ),
             ],
           )),
@@ -81,18 +81,18 @@ class _MyHomePageState extends State<MyHomePage> {
       body: DataManager(
         child: SingleChildScrollView(
           child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const HeaderWidget(),
-            const InfoWidget(),
-            const OptionsWidget(),
-            const CardButtonWidget(),
-            const RecommendationsWidget(),
-            const Divider(color: Colors.grey),
-            const CardInfoWidget(),
-            const Divider(
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+            HeaderWidget(),
+            InfoWidget(),
+            OptionsWidget(),
+            CardButtonWidget(),
+            RecommendationsWidget(),
+            Divider(color: Colors.grey),
+            CardInfoWidget(),
+            Divider(
               color: Colors.grey,
             ),
-            const NewsWidget(),
+            NewsWidget(),
           ]),
         ),
       ),

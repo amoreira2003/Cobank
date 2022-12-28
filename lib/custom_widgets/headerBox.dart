@@ -19,9 +19,9 @@ class HeaderBox extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Header(),
-              const HeaderUserName(),
+            children: const [
+              Header(),
+              HeaderUserName(),
             ]),
       ),
     );

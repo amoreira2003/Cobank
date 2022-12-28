@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class HomeNavBarCustomButton extends StatelessWidget {
   HomeNavBarCustomButton(
       {Key? key,
-      @required IconData? this.customIcon,
-      @required Color? this.customColor})
+      @required this.customIcon,
+      @required this.customColor})
       : super(key: key);
 
   IconData? customIcon;

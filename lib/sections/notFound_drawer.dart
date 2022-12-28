@@ -12,7 +12,7 @@ class NotFoundDrawer extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(bottom: 100),
+            margin: const EdgeInsets.only(bottom: 100),
             width: MediaQuery.of(context).size.width - 14,
             child: Column(children: [
               Padding(
@@ -21,34 +21,33 @@ class NotFoundDrawer extends StatelessWidget {
                   children: [
                     IconButton(
                       splashColor: Colors.transparent,
-                      constraints: BoxConstraints(maxWidth: 25, maxHeight: 25),
+                      constraints: const BoxConstraints(maxWidth: 25, maxHeight: 25),
                       onPressed: (() {
                         Navigator.of(context).pop();
                       }),
-                      icon: Icon(Icons.close,
+                      icon: const Icon(Icons.close,
                           color: Color.fromARGB(255, 107, 107, 107),
-                          size: DesignChoice.titleIconSize * 2),
+                          size: titleIconSize * 2),
                     ),
                   ],
                 ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text(
                     "Não encontramos essa página.",
                     style: TextStyle(fontSize: 28),
                   ),
                   Text(
                     "Vai um Cookie?",
-                    style:
-                        TextStyle(color: DesignChoice.grayText, fontSize: 20),
+                    style: TextStyle(color: grayText, fontSize: 20),
                   ),
                 ],
               ),
             ]),
           ),
-          Center(
+          const Center(
             child: SizedBox(
                 width: 300,
                 child: Image(image: AssetImage('./images/perfectCookie.png'))),

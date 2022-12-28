@@ -12,15 +12,15 @@ class ParcelarButton extends StatelessWidget {
     return Container(
       width: 115,
       height: 35,
-      decoration: BoxDecoration(
-          color: DesignChoice.grayColor,
+      decoration: const BoxDecoration(
+          color: grayColor,
           borderRadius: BorderRadius.all(Radius.circular(24))),
-      margin: EdgeInsets.symmetric(vertical: 12),
+      margin: const EdgeInsets.symmetric(vertical: 12),
       child: TextButton(
           onPressed: () {
             Scaffold.of(context).openEndDrawer();
           },
-          child: Text(
+          child: const Text(
               style: TextStyle(fontSize: 12, color: Colors.black),
               "Parcelar Compras")),
     );

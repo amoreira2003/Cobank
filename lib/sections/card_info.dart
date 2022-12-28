@@ -1,4 +1,3 @@
-import 'package:cobank/assets/design_choices.dart';
 import 'package:cobank/custom_widgets/sectionTitle.dart';
 import 'package:flutter/material.dart';
 
@@ -19,10 +18,10 @@ class CardInfoWidget extends StatelessWidget {
             color: Colors.white,
           ),
           child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const SectionTitle(title: "Cartão de Crédito"),
-            const InfoDisplayArea(),
-            const ParcelarButton(),
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+            SectionTitle(title: "Cartão de Crédito"),
+            InfoDisplayArea(),
+            ParcelarButton(),
           ]),
         ),
       ),

@@ -11,7 +11,7 @@ class InfoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     bool isVisible = InheritedDataWidget.of(context)!.isVisible;
     return (Padding(
-      padding: EdgeInsets.only(left: 14, right: 14, top: 16, bottom: 0),
+      padding: const EdgeInsets.only(left: 14, right: 14, top: 16, bottom: 0),
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: 65,
@@ -20,7 +20,7 @@ class InfoWidget extends StatelessWidget {
               color: Colors.white,
             ),
             child: Column(children: [
-              SectionTitle(
+              const SectionTitle(
                 title: "Conta",
               ),
               Row(
@@ -30,9 +30,9 @@ class InfoWidget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 15.0),
                       child: Text(
-                          style: TextStyle(
-                              fontSize: DesignChoice.titleFontSize,
-                              fontWeight: DesignChoice.titleFontWeight),
+                          style: const TextStyle(
+                              fontSize: titleFontSize,
+                              fontWeight: titleFontWeight),
                           isVisible ? "C\$ 0,79" : "C\$ ****"),
                     ),
                   ])

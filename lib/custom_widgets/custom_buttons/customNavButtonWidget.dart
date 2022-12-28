@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class NavBarCustomButton extends StatelessWidget {
   NavBarCustomButton(
       {Key? key,
-      @required IconData? this.customIcon,
-      @required Color? this.customColor})
+      @required this.customIcon,
+      @required this.customColor})
       : super(key: key);
 
   IconData? customIcon;

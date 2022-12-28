@@ -15,22 +15,21 @@ class CustomRecomendations extends StatelessWidget {
     return Container(
       width: 200,
       height: 100,
-      decoration: BoxDecoration(
-          color: DesignChoice.grayColor,
-          borderRadius: BorderRadius.all(Radius.circular(8))),
+      decoration: const BoxDecoration(
+          color: grayColor, borderRadius: BorderRadius.all(Radius.circular(8))),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 16),
         child: RichText(
           text: TextSpan(
               text: brownText,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.brown,
                   fontSize: 11,
                   fontWeight: FontWeight.w600),
               children: <TextSpan>[
                 TextSpan(
                     text: normalText,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w400))
               ]),
         ),

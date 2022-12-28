@@ -14,10 +14,10 @@ class HeaderIcons extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 14),
       child: Wrap(
         spacing: 15,
-        children: [
-          const HeaderIconVisibilityButton(),
-          const HeaderIconButton(icon: Icons.help_outline_rounded),
-          const HeaderIconButton(icon: Icons.content_paste_search_outlined),
+        children: const [
+          HeaderIconVisibilityButton(),
+          HeaderIconButton(icon: Icons.help_outline_rounded),
+          HeaderIconButton(icon: Icons.content_paste_search_outlined),
         ],
       ),
     );

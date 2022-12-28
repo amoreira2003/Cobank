@@ -9,9 +9,9 @@ class CardButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 14),
-      child: const SectionButton(
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 14.0, vertical: 14),
+      child: SectionButton(
           buttonTitle: "Meus Cookie Cards", icon: Icons.credit_card),
     );
   }

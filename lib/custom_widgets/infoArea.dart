@@ -20,20 +20,16 @@ class InfoDisplayArea extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                    style:
-                        TextStyle(color: DesignChoice.grayText, fontSize: 12),
+                const Text(
+                    style: TextStyle(color: grayText, fontSize: 12),
                     "Fatura Atual"),
                 Text(
-                    style: TextStyle(
-                        fontSize: DesignChoice.titleFontSize,
-                        fontWeight: DesignChoice.titleFontWeight),
+                    style: const TextStyle(
+                        fontSize: titleFontSize, fontWeight: titleFontWeight),
                     isVisible ? "C\$ 2.234,12" : "C\$ ********"),
                 Text(
-                    style:
-                        TextStyle(color: DesignChoice.grayText, fontSize: 12),
-                    "Limite disponível de " +
-                        (isVisible ? "C\$ 1.123,23" : "C\$ ********")),
+                    style: const TextStyle(color: grayText, fontSize: 12),
+                    "Limite disponível de ${isVisible ? "C\$ 1.123,23" : "C\$ ********"}"),
               ],
             ),
           ),
