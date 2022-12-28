@@ -9,4 +9,5 @@ class DesignChoice {
 
   static FontWeight titleFontWeight = FontWeight.w500;
   static FontWeight buttonFontWeight = FontWeight.w500;
+  static Color navBarNotSelectedColor = Color.fromARGB(255, 198, 198, 198);
 }
