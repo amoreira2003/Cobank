@@ -7,7 +7,7 @@
 
 ## 🤗 Introdução
 
-Esse repositório contem um Clone do Aplicativo Mobile (Visual) do **Nubank** com o tema do [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/).
+Esse repositório contem um Clone do Aplicativo Mobile do **Nubank** com o tema do [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/).
 
 
 ## ⚔️ Sobre o Projeto
@@ -19,7 +19,7 @@ O <a href="https://github.com/amoreira2003/Nubank-FlutterClone" target="_blank">
   <div>
 <div>
 
-## 📸 Sneakpeaks do Projeto
+## 📸 Sneak Peeks do Projeto
 
 <img width="379.5" height="642.5" src="./cobankgif.gif"> <img width="379.5" height="642.5" src="./image.png"> <img width="379.5" height="642.5" src="./image2.png"> <img width="379.5" height="642.5" src="./image3.png">
 
