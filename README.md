@@ -19,3 +19,7 @@ O <a href="https://github.com/amoreira2003/Nubank-FlutterClone" target="_blank">
   <div>
 <div>
 
+## 📸 Sneakpeaks do Projeto
+
+<img width="379.5" height="642.5" src="./cobankgif.gif"><img width="379.5" height="642.5" src="./image.gif"> <img width="379.5" height="642.5" src="./image2.gif"> <img src="./image3.gif">
+
